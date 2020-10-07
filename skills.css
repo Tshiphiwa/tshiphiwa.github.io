@@ -1,0 +1,114 @@
+
+.skills{
+    background: white;
+    padding-top: 40px;
+}
+
+.heading .white{
+    color: gray;
+}
+
+.skills .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.skills .content .skillsBox{
+    padding: 40px 20px;
+    /* background: rgba(34, 34, 34, 0.507); */
+    background: #222;
+    border-radius: 40%;
+    color:turquoise;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    
+}
+
+.skills .content .skillsBox h2{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight:600;
+}
+
+.skills .content .skillsBox:hover{
+    background: lightblue;
+    transform: scale(1.3);
+    color: white;
+    
+}
+
+.skills .content .skillsBox img{
+    max-width: 80px;
+    filter: invert(1);
+}
+
+
+
+/* Footer Section */
+
+.footer{
+    position: relative;
+    background: #222;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: oblique;
+    margin-top: 5px;
+}
+
+.footer p{
+    color: white;
+}
+
+.footer .icon{
+    font-size: 24px;
+    padding: 15px;
+    bottom: 0;
+    z-index: 200;
+    border-radius: 40%;
+    border-color: turquoise;
+    
+}
+
+.footer .icon:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3, 0 0 40px #2196f3 , 0 0 80px #2196f3;
+    transform: translate(-20%,-20%);
+    color: white;
+}
+
+
+/* For mobile */
+
+@media only screen and (min-width: 300px) and (max-width: 600px){
+
+
+    
+.skills .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.skills .content .skillsBox{
+    padding: 40px 15px;
+    /* background: rgba(34, 34, 34, 0.507); */
+    background: #222;
+    border-radius: 40%;
+    color:turquoise;
+    max-width: 300px;
+    margin: 15x;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+
+}

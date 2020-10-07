@@ -1,0 +1,39 @@
+.Interests{
+    background: white;
+    padding-top: 40px;
+}
+
+.heading .white{
+
+    color:turquoise;
+}
+
+.Interests .Content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.Content .interestsBox h2{
+    color:turquoise;
+}
+
+.Interests .Content .interestsBox {
+
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.Interests .Content .img{
+    max-width:80%;
+    height:auto;
+    filter: invert(1);
+}
+
+
