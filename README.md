@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <link rel="stylesheet" href="content stylesheet.css">
@@ -43,6 +43,7 @@
 <div class ="fix"></div>
 
 <div class ="banner" id="home">
+    
     <img class = "phoneImg" src = "SamboFavBar.PNG" >
 
     <div class = "textbox">
