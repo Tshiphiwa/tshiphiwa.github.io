@@ -32,6 +32,7 @@ html, body{
 
    }
 
+
    .banner h2,h3{
        font-size: 1.5em;
    }
@@ -204,3 +205,8 @@ html, body{
 }
 
 
+#clock{
+    float:right;
+    font-size: 20px;
+    color: white;
+}
