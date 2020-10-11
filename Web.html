@@ -41,9 +41,9 @@
 
 
 <div class ="fix"></div>
-
 <div class ="banner" id="home">
     <img class = "phoneImg" src = "SamboFavBar.PNG" >
+  
 
     <div class = "textbox">
         <h1>I am TSHIPHIWA SAMBO</h1>
@@ -53,8 +53,11 @@
             <input type="button" value ="Get to know me"/>
         </a>
 
-        
-
+<body onload="clock()">    
+<div id = "clock">
+    <h1>The time is: </h1>
+</div>
+</body>  
 
         <div class = "scrolldown" href ="#about">
             <span></span>
@@ -99,7 +102,7 @@
     <div class ="heading white">
         <h2>Interests</h2>
         <div class = "intheader-line" data-animation= "slide-in-left" data-delay= "0.5s" style="animation-delay: 0.5s;"></div>
-        <p>This is all my I am interested in outside my course</p>
+        <p>Check out some of the activities that I get up to during my spare time</p>
     </div>
     
 
@@ -108,37 +111,37 @@
     <div class = "interestsBox">
     <img src="coding.png">
     <h2>Coding</h2>
-    <p> I usually do all of this when I'm bored or I have some crazy idea in my head to implement</p>
+    <p> "To be a programmer is to sign yourself up for a life of constant learning."</p>
 </div>
 
 <div class = "interestsBox">
     <img src="hiking.png">
     <h2>Hiking</h2>
-    <p> I always used to do this in my high school year, it was the best thing ever!</p>
+    <p> "There is nothing like grasping a breath of fresh air with no distractions other than going forward that can make me release stress and have a clear state of mind."</p>
 </div>
 
 <div class = "interestsBox">
     <img src="travelling.png">
     <h2>Travelling</h2>
-    <p> Travelling helps me to meet new people out there in the world and learn new cultures and taste different kinds of food</p>
+    <p> “I travel because it makes me realize how much I haven't seen, how much I'm not going to see, and how much I still need to see.”</p>
 </div>
 
 <div class = "interestsBox">
     <img src="music.png">
     <h2>Listening to music</h2>
-    <p> I love doing this the most in my spare time</p>
+    <p> “Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.”</p>
 </div>
 
 <div class = "interestsBox">
     <img src="gym.jpg">
     <h2>Gym</h2>
-    <p> I do this almost every single day in my room during my study breaks</p>
+    <p> “No pain, no gain."</p>
 </div>
 
 <div class = "interestsBox">
     <img src="gardenig.png">
     <h2>Gardening</h2>
-    <p> I do this during weekends to help me clear my mind and focus on the beauty of nature</p>
+    <p> "God Almighty first planted a garden. And indeed, it is the purest of human pleasures."</p>
 </div>
 
 </div>
@@ -150,7 +153,7 @@
     <div class = "heading">
         <h2>My Technical Skills</h2>
         <div class = "Techeader-line" data-animation= "slide-in-left" data-delay= "0.5s" style="animation-delay: 0.5s;"></div>
-        <p>This is just a brief summary of my tech skills, more to come!!!!</p>
+        <p>This is just a brief summary of my technical skills, more to come!!!!</p>
     </div>
 
 
@@ -163,8 +166,8 @@
     </div>
 
      <div class="skillsBox">
-        <img src="c#.png">
-        <h2>C#</h2>
+        <img src="e.png">
+        <h2>R Programming</h2>
     </div> 
 
     <div class="skillsBox">
@@ -261,6 +264,11 @@
 </div>
 </section>
 
+<!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDaseekfleeksquad-582923158388718%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> -->
+
+<div class="twitterAPI">
+    <a class="twitter-timeline" href="https://twitter.com/Tshiphiwa24?ref_src=twsrc%5Etfw">Tweets by Tshiphiwa24</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 
 </body>
@@ -316,6 +324,36 @@
         prevScrollpos = currentScrollPos;
 
     }
+
+//Get the real time
+
+function clock(){
+
+    var clock = new Date();
+
+    var sec = clock.getSeconds();
+    var min = clock.getMinutes();
+    var hours = clock.getHours();
+
+   
+   //add the AM and PM
+    var amPM = (hours<12) ? "AM" : "PM";
+
+    //Convert to 12hour format
+    hours = (hours >12) ? hours -12 : hours;
+
+    //Pad with leading zeros
+    hours = ("0" + hours).slice(-2);
+    min = ("0" + min).slice(-2);
+    sec = ("0" + sec).slice(-2);
+    
+    //Display the clock
+    document.getElementById('clock').innerHTML = hours + " : " + min + " : " + sec + " " + amPM;
+
+    var t = setTimeout(clock, 500);
+}
+
+
 
 
 </script>
