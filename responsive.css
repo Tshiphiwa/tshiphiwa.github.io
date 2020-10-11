@@ -77,26 +77,175 @@ input[type=button]:active{
 }
 
 
+    
+.skills .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.skills .content .skillsBox{
+    padding: 40px 15px;
+    /* background: rgba(34, 34, 34, 0.507); */
+    background: #222;
+    border-radius: 40%;
+    color:turquoise;
+    max-width: 300px;
+    margin: 15x;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+
+
+
+.Content{
+    display: grid;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.image{
+    display: none;
+}
+
+.ContentBox{
+    padding-right: 30px;
+    padding: 10px 15x;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    height: 680px;
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 30%;
+    background-image: url(about.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    
+}
+
+.ContentBox h3{
+    padding-top: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+    opacity: 100;
+}
+
+.ContentBox w50 p{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin:20px 0px 30px;
+    font-size: 20px;
+}
+
+
+.ContentBox p{
+    color:brown;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin:20px 0px 30px;
+    font-size: 20px;
+}
+
+p{
+    color: turquoise;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin:20px 0px 30px;
+    font-size: 20px;
+}
+
+.w50{
+    min-width: 50%;
+}
+
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.formbox form h3{
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+#clock{
+    float:right;
+    font-size: 20px;
+    margin-right:-30%;
+    transform: rotate(90deg);
+    color: white;
+}
+
+
+
+
+
+/* For laptops */
+
+@media only screen and (min-width: 1400px){
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+    .Abheader-line{
+        height: 4px;
+        margin: -24px 0 57px 660px;
+        width: 100px;
+        background: turquoise;
+        padding-bottom: 5px;
+    }
+
+
+    .intheader-line{
+        height: 4px;
+        margin: 4px 0 5px 660px;
+        width: 100px;
+        background: turquoise;
+        padding-bottom: 7px;
+      
+    }
+    
+    
+    .Techeader-line{
+        height: 6px;
+        margin: 4px 0 5px 570px;
+        width: 280px;
+        background: turquoise;
+        padding-bottom: 5px;
+    }
+    
+    .Conheader-line{
+        height: 4px;
+        margin: 4px 0 5px 560px;
+        width: 310px;
+        background: turquoise;
+        padding-bottom: 5px;
+    }
+
+    #navbar{
+        width: 100%;
+    }
+
+    .banner .phoneImg{
+     display: none;
+ }
+}
+
    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -117,18 +266,4 @@ input[type=button]:active{
        .banner .phoneImg{
            display: none;
        }
-   }
-
-
-   
-   /*Desktops Styles */
-   @media (min-width: 1000px) {
-       #navbar{
-           width: 100%;
-       }
-
-       .banner .phoneImg{
-        display: none;
-    }
-
    }
