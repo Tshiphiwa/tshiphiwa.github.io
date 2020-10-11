@@ -155,19 +155,3 @@
     color: orange;
     transform: scale(1.6);
 }
-
-
-
-@media only screen and (min-width: 300px) and (max-width: 600px){
-
-    .formbox form h3{
-        margin-top: 10px;
-        color: black;
-        font-size: 20px;
-        font-weight: 550;
-        margin-bottom: 10px;
-        margin-left: 100px;
-    }
-    
-}
-
